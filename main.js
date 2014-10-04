@@ -172,6 +172,8 @@
             email: "barbuzaster@gmail.com"
           }, {
             email: "launch@rocketslides.ru"
+          }, {
+            email: "a.n.illarionov@rocketslides.ru"
           }
         ]
       }
