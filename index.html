@@ -56,22 +56,6 @@
         </ul>
       </div>
     </div>
-    <div id='clients'>
-      <div class='wrap'>
-        <ul class='fotorama' data-width='998' data-autoplay='5000' data-click='false' data-loop='true' data-transitionduration='500' data-nav='no'>
-          <li>
-            <a href='#' data-client='smart-wall'></a>
-            <a href='#' data-client='scandinavia'></a>
-            <a href='#' data-client='sun-school'></a>
-            <a href='#' data-client='bright-box'></a>
-            <a href='#' data-client='webcreds'></a>
-            <a href='#' data-client='free'></a>
-            <a href='#' data-client='exante'></a>
-            <a href='#' data-client='mosrektorg'></a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <div id='portfolio'>
       <div class='wrap'>
         <h1>Портфолио</h1>
@@ -86,7 +70,7 @@
           <input type='text' name='name' placeholder='Ваше имя' required='true'>
           <input type='email' name='email' placeholder='Email' required='true'>
           <input type='text' name='phone' placeholder='+7 (___) __-__-__'>
-          <input type='submit' value='Получить портфолио' data-name='портфолио' required='true' data-event='open-portfolio' onlcick="_gaq.push(['_trackEvent', ‘portfolio’,’send’])">
+          <input type='submit' value='Получить портфолио' data-name='портфолио' required='true' data-event='open-portfolio' onlcick="ga('send', 'event', ‘portfolio’, request)">
           <p>
             или
             <a href='#order-call' data-name='из портфолио'>заказать звонок</a>
