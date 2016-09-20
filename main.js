@@ -102,13 +102,13 @@
     return false;
   });
 
-  Mandrill = new mandrill.Mandrill("eryR6LS4JOYJiGZpkOjECw");
+  Mandrill = new mandrill.Mandrill("_bFg4pRmNF1b0Jt3IN2K-Q");
 
   sendMail = function(_arg, complete) {
     var button, email, message, name, params, phone;
     name = _arg.name, phone = _arg.phone, email = _arg.email, message = _arg.message, button = _arg.button;
     params = {
-      template_name: "request_presentation",
+      template_name: "robot-rocketslides-email",
       template_content: [
         {
           name: "name",
