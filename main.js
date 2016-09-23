@@ -169,9 +169,11 @@
       message: {
         to: [
           {
-            email: "barbuzaster@gmail.com"
+            email: "rocketslides@robot.zapier.com"
           }, {
             email: "launch@rocketslides.ru"
+          }, {
+            email: "vadmikhalyov+rngvlkjorugnojiw2me4@boards.trello.com"
           }
         ]
       }
