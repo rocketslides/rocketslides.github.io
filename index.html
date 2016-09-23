@@ -70,7 +70,7 @@
           <input type='text' name='name' placeholder='Ваше имя' required='true'>
           <input type='email' name='email' placeholder='Email' required='true'>
           <input type='text' name='phone' placeholder='+7 (___) __-__-__'>
-          <input type='submit' value='Получить портфолио' data-name='портфолио' required='true' data-event='get-portfolio'>
+          <input type='submit' value='Получить портфолио' data-name='портфолио' data-event='get-portfolio'>
           <p>
             или
             <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
@@ -172,7 +172,7 @@
             <p>Воспользуйтесь контактной формой ниже</p>
             <input type='text' name='name' placeholder='Ваше имя' required='true'>
             <input type='email' name='email' placeholder='Email' required='true'>
-            <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
+            <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='false'>
             <textarea name='message' placeholder='Ваш вопрос или описание задачи на расчет стоимости'></textarea>
             <input type='submit' value='Отправить сообщение' data-name='остались вопросы' data-event='message'>
             <div class='done'>
@@ -199,7 +199,7 @@
             <h3>Заказать презентацию</h3>
             <input type='text' name='name' placeholder='Ваше имя' required='true'>
             <input type='email' name='email' placeholder='Email' required='true'>
-            <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
+            <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='false'>
             <input type='submit' value='Отправить заявку' data-event='send-request'>
             <div class='done'>
               <h3>Спасибо.<br>Ваш заказ принят.</h3>
@@ -217,7 +217,7 @@
           <form>
             <input type='text' name='name' placeholder='Ваше имя' required='true'>
             <input type='text' name='phone' placeholder='+7 (___) ___-__-__' required='true'>
-            <input type='submit' value='Отправить заявку' data-event='send-call-request'>
+            <input type='submit' value='Заказать звонок' data-event='send-call-request'>
             <div class='done'>
               <h3>Спасибо!<br>Ваш заказ на звонок принят.</h3>
               <p>Наш менеджер скоро<br>свяжется с Вами.</p>
