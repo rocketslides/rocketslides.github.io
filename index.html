@@ -70,10 +70,10 @@
           <input type='text' name='name' placeholder='Ваше имя' required='true'>
           <input type='email' name='email' placeholder='Email' required='true'>
           <input type='text' name='phone' placeholder='+7 (___) __-__-__'>
-          <input type='submit' value='Получить портфолио' data-name='портфолио' required='true' data-event='open-portfolio' onlcick="ga('send', 'event', ‘portfolio’, request);">
+          <input type='submit' value='Получить портфолио' data-name='портфолио' required='true' data-event='get-portfolio'>
           <p>
             или
-            <a href='#order-call' data-name='из портфолио'>заказать звонок</a>
+            <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
           </p>
           <div class='done'>
             <h3>Спасибо!<br>Ваш заказ принят.</h3>
@@ -115,37 +115,37 @@
           <li class='selling'>
             <h3>Продающие презентации<br>и маркетинг-киты</h3>
             <h4>от <strong>20</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='продающие презентации'>Заказать презентацию</a>
+            <a class='presentation' href='#order-presentation' data-name='продающие презентации' data-event='order-bigbutton'>Заказать презентацию</a>
             <p>
               или
-              <a href='#order-call' ta-name='из продающих презентаций'>заказать звонок</a>
+              <a href='#order-call' ta-name='из продающих презентаций' data-event='callback-header'>заказать звонок</a>
             </p>
           </li>
           <li class='public'>
             <h3>Презентации<br>для публичных выступлений</h3>
             <h4>от <strong>15</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='публичные выступления'>Заказать презентацию</a>
+            <a class='presentation' href='#order-presentation' data-name='публичные выступления' data-event='order-bigbutton'>Заказать презентацию</a>
             <p>
               или
-              <a href='#order-call' data-name='из публичных выступлений'>заказать звонок</a>
+              <a href='#order-call' data-name='из публичных выступлений' data-event='callback-header'>заказать звонок</a>
             </p>
           </li>
           <li class='corporate'>
             <h3>Корпоративные шаблоны<br>презентаций</h3>
             <h4>от <strong>30</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='корпоративные шаблоны'>Заказать шаблон</a>
+            <a class='presentation' href='#order-presentation' data-name='корпоративные шаблоны' data-event='order-template'>Заказать шаблон</a>
             <p>
               или
-              <a href='#order-call' data-name='из корпоративных шаблонов'>заказать звонок</a>
+              <a href='#order-call' data-name='из корпоративных шаблонов' data-event='callback-header'>заказать звонок</a>
             </p>
           </li>
           <li class='trainings'>
             <h3>Абонентское<br>обслуживание</h3>
             <h4>от <strong>50</strong> тыс. руб./мес.</h4>
-            <a class='presentation' href='#order-presentation' data-name='тренинги'>Обсудить условия</a>
+            <a class='presentation' href='#order-presentation' data-name='тренинги' data-event='order-terms'>Обсудить условия</a>
             <p>
               или
-              <a href='#order-call' data-name='из тренингов'>заказать звонок</a>
+              <a href='#order-call' data-name='из тренингов' data-event='callback-header'>заказать звонок</a>
             </p>
           </li>
         </ul>
@@ -174,7 +174,7 @@
             <input type='email' name='email' placeholder='Email' required='true'>
             <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
             <textarea name='message' placeholder='Ваш вопрос или описание задачи на расчет стоимости'></textarea>
-            <input type='submit' value='Отправить сообщение' data-name='остались вопросы'>
+            <input type='submit' value='Отправить сообщение' data-name='остались вопросы' data-event='message'>
             <div class='done'>
               <h3>Спасибо!<br>Ваш заказ принят.</h3>
               <p>Наш менеджер скоро<br>свяжется с Вами.</p>
@@ -200,7 +200,7 @@
             <input type='text' name='name' placeholder='Ваше имя' required='true'>
             <input type='email' name='email' placeholder='Email' required='true'>
             <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
-            <input type='submit' value='Отправить заявку'>
+            <input type='submit' value='Отправить заявку' data-event='send-request'>
             <div class='done'>
               <h3>Спасибо.<br>Ваш заказ принят.</h3>
               <p>Наш менеджер скоро<br>свяжется с Вами.</p>
@@ -217,9 +217,9 @@
           <form>
             <input type='text' name='name' placeholder='Ваше имя' required='true'>
             <input type='text' name='phone' placeholder='+7 (___) ___-__-__' required='true'>
-            <input type='submit' value='Отправить заявку'>
+            <input type='submit' value='Отправить заявку' data-event='send-call-request'>
             <div class='done'>
-              <h3>Спасибо!<br>Ваш заказ принят.</h3>
+              <h3>Спасибо!<br>Ваш заказ на звонок принят.</h3>
               <p>Наш менеджер скоро<br>свяжется с Вами.</p>
               <div class='close-popup'>Закрыть</div>
             </div>
