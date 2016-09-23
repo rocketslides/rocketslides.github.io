@@ -105,7 +105,7 @@
   Mandrill = new mandrill.Mandrill("_bFg4pRmNF1b0Jt3IN2K-Q");
 
   sendMail = function(_arg, complete) {
-    var button, email, message, name, params, phone;
+    var button, email, message, name, params, phone, welcome_params;
     name = _arg.name, phone = _arg.phone, email = _arg.email, message = _arg.message, button = _arg.button;
     params = {
       template_name: "robot-rocketslides-email",
@@ -172,16 +172,37 @@
             email: "barbuzaster@gmail.com"
           }, {
             email: "launch@rocketslides.ru"
-          }, {
-            email: "a.n.illarionov@rocketslides.ru"
+          }
+        ]
+      }
+    };
+    welcome_params = {
+      template_name: "welcome",
+      template_content: [
+        {
+          name: "name",
+          content: name
+        }
+      ],
+      message: {
+        to: [
+          {
+            email: email
           }
         ]
       }
     };
     return Mandrill.messages.sendTemplate(params, function() {
-      if (complete) {
-        return complete();
+      if ((email || '').length) {
+        Mandrill.messages.sendTemplate(welcome_params, function() {
+          if (complete) {
+            return complete();
+          }
+        });
       }
+      return {
+        "else": complete ? complete() : void 0
+      };
     });
   };
 
