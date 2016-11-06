@@ -105,12 +105,24 @@
   Mandrill = new mandrill.Mandrill("_bFg4pRmNF1b0Jt3IN2K-Q");
 
   sendMail = function(_arg, complete) {
-    var button, email, message, name, params, phone, welcome_params;
-    name = _arg.name, phone = _arg.phone, email = _arg.email, message = _arg.message, button = _arg.button;
+    var button, email, has_structure, message, name, params, phone, reason, type, welcome_params, when_;
+    name = _arg.name, type = _arg.type, reason = _arg.reason, has_structure = _arg.has_structure, when_ = _arg.when_, phone = _arg.phone, email = _arg.email, message = _arg.message, button = _arg.button;
     params = {
       template_name: "robot-rocketslides-email",
       template_content: [
         {
+          name: "type",
+          content: type
+        }, {
+          name: "reason",
+          content: reason
+        }, {
+          name: "has_structure",
+          content: "has_structure"
+        }, {
+          name: "when",
+          content: when_
+        }, {
           name: "name",
           content: name
         }, {
@@ -208,20 +220,40 @@
     });
   };
 
+  $("#id_has_phone_1").change(function() {
+    return $('#id_phone_1').css({
+      display: $(this).is(':checked') ? 'inline-block' : 'none'
+    });
+  });
+
+  $("#id_has_phone_2").change(function() {
+    return $('#id_phone_2').css({
+      display: $(this).is(':checked') ? 'inline-block' : 'none'
+    });
+  });
+
   $("form").submit(function() {
-    var button, email, message, name, phone;
+    var button, email, has_structure, message, name, phone, reason, type, when_;
     name = $(this).find("[name='name']").val() || "";
     phone = $(this).find("[name='phone']").val() || "";
     email = $(this).find("[name='email']").val() || "";
     message = $(this).find("[name='message']").val() || "";
     button = $(this).find("[data-name]").data("name") || "";
+    when_ = $(this).find("[name='when']").val() || "";
+    reason = $(this).find("[name='reason']").val() || "";
+    type = $(this).find("[name='type']").val() || "";
+    has_structure = $(this).find("[name='has_structure']").val() || "";
     $(this).addClass("submiting");
     sendMail({
       name: name,
       phone: phone,
       email: email,
       message: message,
-      button: button
+      button: button,
+      when_: when_,
+      reason: reason,
+      type: type,
+      has_structure: has_structure
     }, (function(_this) {
       return function() {
         $(_this).removeClass("submiting").addClass("submited");

@@ -31,9 +31,8 @@
         <div class='title'>
           <h1>Создаём презентации<br>и шаблоны бизнес-класса</h1>
           <h2>в PowerPoint, Keynote и Prezi</h2>
-          <h2>срочно и на поддержке</h2>
         </div>
-        <a class='order' href='#order-presentation' data-name='первая кнопка' data-event='order-bigbutton'>Заказать презентацию</a>
+        <a class='order' href='#order-presentation' data-name='первая кнопка' data-event='order-bigbutton'>Рассчитать стоимость</a>
       </div>
     </div>
     <div id='info'>
@@ -59,28 +58,46 @@
     </div>
     <div id='portfolio'>
       <div class='wrap'>
-        <h1>Портфолио</h1>
-        <ul>
-          <li>Продающие презентации<br>для отправки по email</li>
-          <li>Презентации для публичных<br>выступлений</li>
-          <li>Презентации для инвесторов<br>и маркетинг-киты</li>
-          <li>Корпоративные шаблоны<br>презентаций</li>
-        </ul>
-        <form>
-          <h3>Получите презентацию c&nbsp;нашими с лучшими кейсами</h3>
-          <input type='text' name='name' placeholder='Ваше имя' required='true'>
-          <input type='email' name='email' placeholder='Email' required='true'>
-          <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
-          <input type='submit' value='Получить портфолио' data-name='портфолио' data-event='get-portfolio'>
-          <p>
-            или
-            <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
-          </p>
-          <div class='done'>
-            <h3>Спасибо!<br>Ваш заказ принят.</h3>
-            <p>Наш менеджер в течение часа<br>свяжется с Вами.</p>
+        <div class='left'>
+          <h1>Портфолио</h1>
+          <div class='list-wrapper'>
+            <ul>
+              <li>Продающие презентации<br>для отправки по email</li>
+              <li>Презентации для публичных<br>выступлений</li>
+              <li>Питчи для инвесторов<br></li>
+              <li>Маркетинг-киты для печати<br></li>
+              <li>Корпоративные шаблоны<br>презентаций</li>
+            </ul>
           </div>
-        </form>
+        </div>
+        <div class='form-wrapper'>
+          <form>
+            <h3>Получите по email наши лучшие работы по вашей задаче</h3>
+            <label for='id_type_1'>Мне нужна</label>
+            <select id='id_type_1' name='type' required='true'>
+              <option value='Перезентация'>Перезентация</option>
+              <option value='Шаблон PowerPoint'>Шаблон PowerPoint</option>
+            </select>
+            <label for='id_reason_1'>Для чего</label>
+            <input id='id_reason_1' type='text' name='reason' required='true' value='для отправки по email'>
+            <label for='id_email_1'>Куда отправить работы</label>
+            <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
+            <label class='checkbox-label' for='id_has_phone_1'>
+              <input id='id_has_phone_1' type='checkbox' name='has_phone'>
+              Мне можно позвонить
+            </label>
+            <input id='id_phone_1' type='text' name='phone' placeholder='+7 (___) __-__-__' style='display: none'>
+            <input type='submit' value='Получить портфолио' data-name='портфолио' data-event='get-portfolio'>
+            <p>
+              или
+              <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
+            </p>
+            <div class='done'>
+              <h3>Спасибо!<br>Ваш заказ принят.</h3>
+              <p>Наш менеджер в течение часа<br>свяжется с Вами.</p>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <div id='result'>
@@ -192,19 +209,35 @@
         <div class='inner'>
           <div class='close'></div>
           <div class='info'>
-            <p>Мы свяжемся с Вами<br>в течение <strong>5-7 минут</strong></p>
-            <p>Если задача срочная,<br>презентацию делаем<br><strong>в течение 24 часов</strong></p>
+            <p>Делаем расчет стоимости<br>проекта в течение<br><strong>30 минут</strong></p>
+            <p>Если задача срочная,<br>срок разработки — <br><strong>от 12 часов</strong></p>
             <p>Если у вас срочный запрос,<br>звоните сразу по телефону<br><strong>+7 964 624 65 23</strong></p>
           </div>
           <form>
-            <h3>Заказать презентацию</h3>
-            <input type='text' name='name' placeholder='Ваше имя' required='true'>
-            <input type='email' name='email' placeholder='Email' required='true'>
-            <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
-            <input type='submit' value='Отправить заявку' data-event='send-request'>
+            <label for='id_type_1'>Мне нужна</label>
+            <select id='id_type_1' name='type' required='true'>
+              <option value='Перезентация'>Перезентация</option>
+              <option value='Шаблон PowerPoint'>Шаблон PowerPoint</option>
+            </select>
+            <label for='id_reason_1'>Для чего</label>
+            <input id='id_reason_1' type='text' name='reason' required='true' value='для отправки по email'>
+            <label for='id_when_1'>Когда</label>
+            <input id='id_when_1' type='text' name='when' required='true' value='к утру'>
+            <label for='id_email_1'>Куда отправить смету</label>
+            <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
+            <label class='checkbox-label' for='id_has_structure_1'>
+              <input id='id_has_structure_1' type='checkbox' name='has_structure'>
+              Структура презентации уже есть
+            </label>
+            <label class='checkbox-label' for='id_has_phone_1'>
+              <input id='id_has_phone_1' type='checkbox' name='has_phone'>
+              Мне можно позвонить
+            </label>
+            <input id='id_phone_1' type='text' name='phone' placeholder='+7 (___) __-__-__' style='display: none'>
+            <input type='submit' value='Получить расчет стоимости' data-event='send-request'>
             <div class='done'>
-              <h3>Спасибо.<br>Ваш заказ принят.</h3>
-              <p>Наш менеджер скоро<br>свяжется с Вами.</p>
+              <h3>Спасибо.<br>Мы приняли вашу заявку.</h3>
+              <p>Расчет стоимости скоро будет<br> у вас на почте.</p>
               <div class='close-popup'>Закрыть</div>
             </div>
           </form>
