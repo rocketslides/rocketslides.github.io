@@ -3,7 +3,7 @@
   <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='height=device-height,width=device-width,initial-scale=1.0'>
-    <title>Презентации под ключ в Rocketslides</title>
+    <title>Срочный дизайн презентаций в Rocketslides</title>
     <link rel='stylesheet' href='bundle.min.css'>
     <link href='//cdnjs.cloudflare.com/ajax/libs/fotorama/4.4.9/fotorama.css' rel='stylesheet'>
     <script src='//use.typekit.net/wsx3qoh.js'></script>
@@ -17,20 +17,21 @@
         <div id='logo'></div>
         <nav>
           <a href='#portfolio'>Портфолио</a>
-          <a href='#result'>Методология</a>
-          <a href='#services'>Стоимость</a>
+          <a href='#result'>Гарантии</a>
+          <a href='#services'>Тарифы</a>
         </nav>
         <div class='contact'>
-          <div class='phone'>+7 964 624-65-23</div>
-          <div class='order-call' href='#order-call' data-name='из шапки' data-event='callback-header'>Заказать звонок</div>
+          <div class='phone'>+7 (964) 624-65-23</div>
+          <!-- .order-call( href="mailto:launch@rocketslides.ru" ) launch@rocketslides.ru -->
+          <div class='order-call' href='mailto:launch@rocketslides.ru' data-name='из шапки' data-event='callback-header'>launch@rocketslides.ru</div>
         </div>
       </div>
     </div>
     <div id='macbook'>
       <div class='wrap'>
         <div class='title'>
-          <h1>Создаём презентации<br>и шаблоны бизнес-класса</h1>
-          <h2>в PowerPoint, Keynote и Prezi</h2>
+          <h1>Дизайн и копирайтинг<br>презентаций за 24 часа</h1>
+          <h2>cо 100% гарантией сроков и качества</h2>
         </div>
         <a class='order' href='#order-presentation' data-name='первая кнопка' data-event='order-bigbutton'>Рассчитать стоимость</a>
       </div>
@@ -38,20 +39,20 @@
     <div id='info'>
       <div class='wrap'>
         <div class='title'>
-          <strong>Бюро презентаций <br>Rocketslides — это:</strong>
+          <strong>Бюро презентаций<br>Rocketslides — это:</strong>
         </div>
         <ul>
           <li>
-            <h2>357</h2>
-            <h3>успешных<br>проектов</h3>
+            <h2>380</h2>
+            <h3>успешно сданных<br>презентаций</h3>
           </li>
           <li>
-            <h2>76<small></small></h2>
-            <h3>корпоративных<br>клиентов</h3>
+            <h2>100%<small></small></h2>
+            <h3>гарантия<br>надежности</h3>
           </li>
           <li>
-            <h2>24 <small>часа</small></h2>
-            <h3>срок создания<br>срочной презентации</h3>
+            <h2>4 <small>часа</small></h2>
+            <h3>на разработку<br>первой дизайн-версии</h3>
           </li>
         </ul>
       </div>
@@ -59,20 +60,26 @@
     <div id='portfolio'>
       <div class='wrap'>
         <div class='left'>
-          <h1>Портфолио</h1>
+          <h1>Стоимость</h1>
           <div class='list-wrapper'>
             <ul>
-              <li>Продающие презентации<br>для отправки по email</li>
-              <li>Презентации для публичных<br>выступлений</li>
-              <li>Питчи для инвесторов<br></li>
-              <li>Маркетинг-киты для печати<br></li>
-              <li>Корпоративные шаблоны<br>презентаций</li>
+              <li>Выставим смету и счёт<br> через 10 минут</li>
+              <li>Покажем лучшие работы<br>по вашей задаче</li>
+              <li>Подъедем на встречу<br>или созвонимся онлайн</li>
+              <li>Начнём работу<br>без предоплаты</li>
+              <li>Пришлем первую версию<br>уже через 3-4 часа</li>
+              <!-- %li Вышлем результат в PowerPoint<br>с исходниками графики -->
+              <!-- %li Продающие презентации<br>для отправки по email -->
+              <!-- %li Презентации для публичных<br>выступлений -->
+              <!-- %li Питчи для инвесторов<br> -->
+              <!-- %li Маркетинг-киты для печати<br> -->
+              <!-- %li Все форматы: PowerPoint, <br>Keynote, Prezi -->
             </ul>
           </div>
         </div>
         <div class='form-wrapper'>
           <form>
-            <h3>Получите по email наши лучшие работы по вашей задаче</h3>
+            <!-- %h3 Получите смету и наши лучшие работы по вашей задаче -->
             <label for='id_type_1'>Хочу заказать</label>
             <select id='id_type_1' name='type' required='true'>
               <option value='Перезентация'>Презентацию</option>
@@ -80,18 +87,21 @@
             </select>
             <label for='id_reason_1'>Для какой задачи</label>
             <input id='id_reason_1' type='text' name='reason' required='true' placeholder='для выступления'>
-            <label for='id_email_1'>Куда отправить работы</label>
+            <label for='id_email_1'>Моя рабочая почта</label>
             <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
+            <label class='checkbox-label' for='id_has_structure_1'>
+              <input id='id_has_structure_1' type='checkbox' name='has_structure'>
+              Структура презентации уже есть
+            </label>
             <label class='checkbox-label' for='id_has_phone_1'>
               <input id='id_has_phone_1' type='checkbox' name='has_phone'>
               Мне можно позвонить
             </label>
             <input id='id_phone_1' type='text' name='phone' placeholder='+7 (___) __-__-__' style='display: none'>
-            <input type='submit' value='Получить портфолио' data-name='портфолио' data-event='get-portfolio'>
-            <p>
-              или
-              <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
-            </p>
+            <input type='submit' value='Рассчитать стоимость' data-name='портфолио' data-event='get-portfolio'>
+            <!-- %p -->
+            <!--  или -->
+            <!--  %a( href="#order-call" data-name="из портфолио" data-event="callback-header" ) заказать звонок -->
             <div class='done'>
               <h3>Спасибо!<br>Ваш заказ принят.</h3>
               <p>Наш менеджер в течение часа<br>свяжется с Вами.</p>
@@ -102,96 +112,138 @@
     </div>
     <div id='result'>
       <div class='wrap'>
-        <h1>Бизнес-результат неизбежен</h1>
-        <h3>Как мы делаем презентации эффективными</h3>
+        <h1>Как нам это удается</h1>
+        <!-- %h3 Возвращаем предоплату, если что-то пошло не так -->
         <ul>
           <li class='diving'>
-            <h4>Погружение<br>в бизнес</h4>
+            <h4>Распределенная<br>команда</h4>
             <p>
-              Презентации должны четко решать свою бизнес-задачу — именно поэтому мы тщательно изучаем то, как работает ваш бизнес, чтобы говорить в презентации «на языке» клиента.
+              30 человек, которые всегда онлайн, позволяют быстро масштабироваться под любую задачу, даже если у вас презентация на 80 слайдов
             </p>
+            <!-- %h4 Погружение<br>в бизнес -->
+            <!-- %p -->
+            <!--  Презентации должны четко решать свою бизнес-задачу — именно поэтому мы тщательно изучаем то, как работает ваш бизнес, чтобы говорить в презентации «на языке» клиента. -->
           </li>
           <li class='structure'>
-            <h4>Продающая<br>структура</h4>
+            <h4>Параллельность<br>процессов</h4>
             <p>
-              Сценарии наших презентаций создаются профессиональным режиссером презентаций — их уровень сразу же выделит вас на фоне конкурентов и замотивирует клиента на нужное действие!
+              Мы делим вашего «слона» на части и работаем одновременно в 6-8 рук, сокращая срок производства до минимума
             </p>
+            <!-- %h4 Продающая<br>структура -->
+            <!-- %p -->
+            <!--  Сценарии наших презентаций создаются профессиональным режиссером презентаций — их уровень сразу же выделит вас на фоне конкурентов и замотивирует клиента на нужное действие! -->
           </li>
           <li class='design'>
-            <h4>Продуманный<br>дизайн</h4>
+            <h4>8 000 слайдов<br>опыта</h4>
             <p>
-              В проектировании дизайна информации на слайдах закладывается обучающая методология, работающая на быстрое считывание и усвоение ключевых сообщений.
+              Мы сделали за 3 года почти 400 презентаций, чтобы брать на себя ответственность за сроки и качество
             </p>
+            <!-- %h4 Продуманный<br>дизайн -->
+            <!-- %p -->
+            <!--  В проектировании дизайна информации на слайдах закладывается обучающая методология, работающая на быстрое считывание и усвоение ключевых сообщений. -->
           </li>
         </ul>
       </div>
     </div>
+    <div id='improve'>
+      <div class='wrap'>
+        <h1>Возвращаем 100% предоплаты,<br>если качество вас не устроит</h1>
+        <h3>Бессрочное предложение для всех новых проектов</h3>
+        <a class='send' href='mailto:launch@rocketslides.ru'>Написать письмо</a>
+      </div>
+    </div>
+    <!-- #reviews
+      <!-- .wrap
+        <!-- %h1 Нас рекомендуют -->
+        <!-- %h3 Наши клиенты о результатах презентаций -->
+        <!-- %ul.fotorama( data-width=998 data-autoplay=5000 data-click="false" data-loop="true" data-transitionduration=500 )
+          <!-- %li( data-client="prostopreza" )
+            <!-- .info
+              <!-- %blockquote
+                <!-- Rocketslides — мои партнеры, которые делают лучшие презентации в Москве. Вместе мы работаем над некоторыми клиентскими проектами и работаем со спикерами TEDxSadovoeRing. Слайды, которые поставляет Вадим, выгодно отличают наших спикеров от всех остальных конференций — единым стилем, минимализмом, эффективностью. -->
+               -->
+              <!-- .person
+                <!-- .name Глеб Шулишов -->
+                <!-- .position
+                  <!-- Режиссер презентаций,<br> -->
+                  тренер и коуч
+                 -->
+               -->
+              <!-- %a.watch( href="#" ) посмотреть работу -->
+             -->
+           -->
+         -->
+       -->
+     -->
     <div id='services'>
       <div class='wrap'>
-        <h1>Что разрабатываем</h1>
+        <h1>Тарифы</h1>
         <ul>
           <li class='selling'>
-            <h3>Продающие презентации<br>и маркетинг-киты</h3>
-            <h4>от <strong>20</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='продающие презентации' data-event='order-bigbutton'>Заказать презентацию</a>
-            <p>
-              или
-              <a href='#order-call' ta-name='из продающих презентаций' data-event='callback-header'>заказать звонок</a>
-            </p>
+            <h3>Презентация для печати<br>или отправки по email</h3>
+            <h4>от <strong>35</strong> тыс. рублей</h4>
+            <a class='presentation' href='#order-presentation' data-name='продающие презентации' data-event='order-bigbutton'>Рассчитать стоимость</a>
+            <!-- %p
+              <!-- или -->
+              <!-- %a( href="#order-call" ta-name="из продающих презентаций" data-event="callback-header" ) заказать звонок -->
+             -->
           </li>
           <li class='public'>
-            <h3>Презентации<br>для публичных выступлений</h3>
-            <h4>от <strong>10</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='публичные выступления' data-event='order-bigbutton'>Заказать презентацию</a>
-            <p>
-              или
-              <a href='#order-call' data-name='из публичных выступлений' data-event='callback-header'>заказать звонок</a>
-            </p>
+            <h3>Презентация<br>для выступления</h3>
+            <h4>от <strong>25</strong> тыс. рублей</h4>
+            <a class='presentation' href='#order-presentation' data-name='публичные выступления' data-event='order-bigbutton'>Рассчитать стоимость</a>
+            <!-- %p
+              <!-- или -->
+              <!-- %a( href="#order-call" data-name="из публичных выступлений" data-event="callback-header" ) заказать звонок -->
+             -->
           </li>
           <li class='corporate'>
-            <h3>Корпоративные шаблоны<br>презентаций</h3>
-            <h4>от <strong>25</strong> тыс. рублей</h4>
-            <a class='presentation' href='#order-presentation' data-name='корпоративные шаблоны' data-event='order-template'>Заказать шаблон</a>
-            <p>
-              или
-              <a href='#order-call' data-name='из корпоративных шаблонов' data-event='callback-header'>заказать звонок</a>
-            </p>
+            <h3>Корпоративный шаблон<br>PowerPoint-презентаций</h3>
+            <h4>от <strong>40</strong> тыс. рублей</h4>
+            <a class='presentation' href='#order-presentation' data-name='корпоративные шаблоны' data-event='order-template'>Рассчитать стоимость</a>
+            <!-- %p
+              <!-- или -->
+              <!-- %a( href="#order-call" data-name="из корпоративных шаблонов" data-event="callback-header" ) заказать звонок -->
+             -->
           </li>
           <li class='trainings'>
             <h3>Абонентское<br>обслуживание</h3>
-            <h4>от <strong>40</strong> тыс. руб./мес.</h4>
+            <h4>от <strong>80</strong> тыс. руб./мес.</h4>
             <a class='presentation' href='#order-presentation' data-name='тренинги' data-event='order-terms'>Обсудить условия</a>
-            <p>
-              или
-              <a href='#order-call' data-name='из тренингов' data-event='callback-header'>заказать звонок</a>
-            </p>
+            <!-- %p
+              <!-- или -->
+              <!-- %a( href="#order-call" data-name="из тренингов" data-event="callback-header") заказать звонок -->
+             -->
           </li>
         </ul>
+       <!-- %h2 Хотите добавить уникальности в ваши презентации?
+        <!-- .tech Мы готовы сделать для вас впечатляющую презентацию в любом<br>прогрессивном формате! -->
+        -->
       </div>
-    </div>
     <div id='team'>
       <div class='wrap'>
         <h1>Контакты</h1>
         <p></p>
         <div class='block'>
           <div class='info'>
-            <div class='title'>На прямой связи с вами:<br>Вадим Михалев</div>
-            <div class='phone'>+7 964 624 65 23</div>
+            <!-- .title На прямой связи с вами: -->
+            <p>Вадим Михалев</p>
+            <div class='phone'><br>+7 (964) 624 65 23</div>
             <a class='email' href='mailto:launch@rocketslides.ru'>launch@rocketslides.ru</a>
             <p>125009, г. Москва,<br>ул. Тверская, д. 12. стр. 1</p>
             <div class='notice'>
               Звонок вас ни к чему не обязывает,<br>
-              мы с удовольствием расскажем<br>
+              я с удовольствием расскажу<br>
               о наших проектах и схеме работы
             </div>
           </div>
           <form>
-            <h3>Остались вопросы или<br>хотите связаться с нами напрямую?</h3>
-            <p>Воспользуйтесь контактной формой ниже</p>
-            <input type='text' name='name' placeholder='Ваше имя' required='true'>
+            <h3>Если остались вопросы<br></h3>
+            <p>Напишите нам на launch@rocketslides.ru<br>или заполните форму:</p>
+            <!-- %input( type="text" name="name" placeholder="Ваше имя" required="true" ) -->
             <input type='email' name='email' placeholder='Email' required='false'>
             <input type='text' name='phone' placeholder='+7 (___) __-__-__' required='true'>
-            <textarea name='message' placeholder='Ваш вопрос или описание задачи на расчет стоимости'></textarea>
+            <textarea name='message' placeholder='Ваше сообщение или вопрос'></textarea>
             <input type='submit' value='Отправить сообщение' data-name='остались вопросы' data-event='message'>
             <div class='done'>
               <h3>Спасибо!<br>Ваш заказ принят.</h3>
@@ -209,9 +261,9 @@
         <div class='inner'>
           <div class='close'></div>
           <div class='info'>
-            <p>Делаем расчет стоимости<br>проекта в течение<br><strong>30 минут</strong></p>
-            <p>Если задача срочная,<br>срок разработки — <br><strong>от 12 часов</strong></p>
-            <p>Если у вас срочный запрос,<br>звоните сразу по телефону<br><strong>+7 964 624 65 23</strong></p>
+            <p>Делаем расчет стоимости<br>в течение<br><strong>15 минут</strong></p>
+            <p>Срок разработки —<br><strong>от 12 часов</strong></p>
+            <p>Если у вас вопросы,<br>свяжитесь с нами по номеру<br><strong>+7 964 624 65 23</strong></p>
           </div>
           <form>
             <label for='id_type_1'>Хочу заказать</label>
@@ -223,7 +275,7 @@
             <input id='id_reason_1' type='text' name='reason' required='true' placeholder='для выступления'>
             <label for='id_when_1'>К какому сроку</label>
             <input id='id_when_1' type='text' name='when' required='true' placeholder='к утру'>
-            <label for='id_email_1'>Куда отправить смету</label>
+            <label for='id_email_1'>Моя рабочая почта</label>
             <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
             <label class='checkbox-label' for='id_has_structure_1'>
               <input id='id_has_structure_1' type='checkbox' name='has_structure'>
@@ -276,5 +328,6 @@
       window.Intercom("boot", {app_id: "mq68evwp"});
     </script>
     <script src='http://analytics.alloka.ru/v4/alloka.js'></script>
+    </div>
   </body>
 </html>
