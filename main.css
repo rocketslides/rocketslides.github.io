@@ -443,7 +443,7 @@ select[name="phone"]:-ms-input-placeholder {
   align-items: center;
 }
 
-#header a {
+#header a:not(.order-call) {
   color: #bebebe;
   text-decoration: none;
   text-transform: uppercase;
@@ -452,11 +452,11 @@ select[name="phone"]:-ms-input-placeholder {
   transition: color 0.3s;
 }
 
-#header a:nth-of-type(n+2) {
+#header a:not(.order-call):nth-of-type(n+2) {
   margin-left: 28px;
 }
 
-#header a.active {
+#header a:not(.order-call).active {
   color: #fff;
 }
 
@@ -634,12 +634,29 @@ select[name="phone"]:-ms-input-placeholder {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  flex-direction: column;
   -webkit-box-align: stretch;
   -moz-box-align: stretch;
   -o-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   align-items: stretch;
+}
+
+#portfolio .inner-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin-top: 65px;
 }
 
 #portfolio .left {
@@ -665,7 +682,6 @@ select[name="phone"]:-ms-input-placeholder {
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   flex-direction: column;
-  padding-bottom: 100px;
 }
 
 #portfolio .list-wrapper {
@@ -988,11 +1004,11 @@ select[name="phone"]:-ms-input-placeholder {
 }
 
 #services .wrap {
-  padding: 80px 0 172px 0;
+  padding: 57px 0 33px 0;
 }
 
 #services ul {
-  padding-bottom: 140px;
+  padding-bottom: 100px;
 }
 
 #services h1 {
@@ -1096,7 +1112,7 @@ select[name="phone"]:-ms-input-placeholder {
   border-top: 2px solid #d9aa02;
   text-align: center;
   background: #f7c102;
-  padding: 124px 0 106px 0;
+  padding: 20px 0 60px 0;
   font-size: 0;
 }
 

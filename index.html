@@ -23,7 +23,7 @@
         <div class='contact'>
           <div class='phone'>+7 (964) 624-65-23</div>
           <!-- .order-call( href="mailto:launch@rocketslides.ru" ) launch@rocketslides.ru -->
-          <div class='order-call' href='mailto:launch@rocketslides.ru' data-name='из шапки' data-event='callback-header'>launch@rocketslides.ru</div>
+          <a class=' order-call' href='mailto:launch@rocketslides.ru' data-name='из шапки' data-event='callback-header'>launch@rocketslides.ru</a>
         </div>
       </div>
     </div>
@@ -59,54 +59,56 @@
     </div>
     <div id='portfolio'>
       <div class='wrap'>
-        <div class='left'>
-          <h1>Портфолио и стоимость</h1>
-          <div class='list-wrapper'>
-            <ul>
-              <li>Выставим смету и счёт<br> через 10 минут</li>
-              <li>Покажем лучшие работы<br>по вашей задаче</li>
-              <li>Подъедем на встречу<br>или созвонимся онлайн</li>
-              <li>Начнём работу<br>без предоплаты</li>
-              <li>Пришлем первую версию<br>уже через 3-4 часа</li>
-              <!-- %li Вышлем результат в PowerPoint<br>с исходниками графики -->
-              <!-- %li Продающие презентации<br>для отправки по email -->
-              <!-- %li Презентации для публичных<br>выступлений -->
-              <!-- %li Питчи для инвесторов<br> -->
-              <!-- %li Маркетинг-киты для печати<br> -->
-              <!-- %li Все форматы: PowerPoint, <br>Keynote, Prezi -->
-            </ul>
-          </div>
-        </div>
-        <div class='form-wrapper'>
-          <form>
-            <!-- %h3 Получите смету и наши лучшие работы по вашей задаче -->
-            <label for='id_type_1'>Хочу заказать</label>
-            <select id='id_type_1' name='type' required='true'>
-              <option value='Перезентация'>Презентацию</option>
-              <option value='Шаблон PowerPoint'>Шаблон в PowerPoint</option>
-            </select>
-            <label for='id_reason_1'>Для какой задачи</label>
-            <input id='id_reason_1' type='text' name='reason' required='true' placeholder='для выступления'>
-            <label for='id_email_1'>Моя рабочая почта</label>
-            <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
-            <label class='checkbox-label' for='id_has_structure_1'>
-              <input id='id_has_structure_1' type='checkbox' name='has_structure'>
-              Структура презентации уже есть
-            </label>
-            <label class='checkbox-label' for='id_has_phone_1'>
-              <input id='id_has_phone_1' type='checkbox' name='has_phone'>
-              Мне можно позвонить
-            </label>
-            <input id='id_phone_1' type='text' name='phone' placeholder='+7 (___) __-__-__' style='display: none'>
-            <input type='submit' value='Получить портфолио и стоимость' data-name='портфолио' data-event='get-portfolio'>
-            <!-- %p или
-              <!-- %a( href="#order-call" data-name="из портфолио" data-event="callback-header" ) заказать звонок -->
-             -->
-            <div class='done'>
-              <h3>Спасибо!<br>Ваш заказ принят.</h3>
-              <p>Наш менеджер в течение часа<br>свяжется с Вами.</p>
+        <h1>Портфолио и стоимость</h1>
+        <div class='inner-wrap'>
+          <div class='left'>
+            <div class='list-wrapper'>
+              <ul>
+                <li>Выставим смету и счёт<br> через 10 минут</li>
+                <li>Покажем лучшие работы<br>по вашей задаче</li>
+                <li>Подъедем на встречу<br>или созвонимся онлайн</li>
+                <li>Начнём работу<br>без предоплаты</li>
+                <li>Пришлем первую версию<br>уже через 3-4 часа</li>
+                <!-- %li Вышлем результат в PowerPoint<br>с исходниками графики -->
+                <!-- %li Продающие презентации<br>для отправки по email -->
+                <!-- %li Презентации для публичных<br>выступлений -->
+                <!-- %li Питчи для инвесторов<br> -->
+                <!-- %li Маркетинг-киты для печати<br> -->
+                <!-- %li Все форматы: PowerPoint, <br>Keynote, Prezi -->
+              </ul>
             </div>
-          </form>
+          </div>
+          <div class='form-wrapper'>
+            <form>
+              <!-- %h3 Получите смету и наши лучшие работы по вашей задаче -->
+              <label for='id_type_1'>Хочу заказать</label>
+              <select id='id_type_1' name='type' required='true'>
+                <option value='Перезентация'>Презентацию</option>
+                <option value='Шаблон PowerPoint'>Шаблон в PowerPoint</option>
+              </select>
+              <label for='id_reason_1'>Для какой задачи</label>
+              <input id='id_reason_1' type='text' name='reason' required='true' placeholder='для выступления'>
+              <label for='id_email_1'>Моя рабочая почта</label>
+              <input id='id_email_1' type='email' name='email' required='true' placeholder='email@company.ru'>
+              <label class='checkbox-label' for='id_has_structure_1'>
+                <input id='id_has_structure_1' type='checkbox' name='has_structure'>
+                Структура презентации уже есть
+              </label>
+              <label class='checkbox-label' for='id_has_phone_1'>
+                <input id='id_has_phone_1' type='checkbox' name='has_phone'>
+                Мне можно позвонить
+              </label>
+              <input id='id_phone_1' type='text' name='phone' placeholder='+7 (___) __-__-__' style='display: none'>
+              <input type='submit' value='Получить портфолио и стоимость' data-name='портфолио' data-event='get-portfolio'>
+              <!-- %p или
+                <a href='#order-call' data-name='из портфолио' data-event='callback-header'>заказать звонок</a>
+               -->
+              <div class='done'>
+                <h3>Спасибо!<br>Ваш заказ принят.</h3>
+                <p>Наш менеджер в течение часа<br>свяжется с Вами.</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -144,22 +146,22 @@
       </div>
     </div>
     <!-- #reviews
-      <!-- .wrap
-        <!-- %h1 Нас рекомендуют -->
-        <!-- %h3 Наши клиенты о результатах презентаций -->
-        <!-- %ul.fotorama( data-width=998 data-autoplay=5000 data-click="false" data-loop="true" data-transitionduration=500 )
-          <!-- %li( data-client="prostopreza" )
-            <!-- .info
-              <!-- %blockquote Rocketslides — мои партнеры, которые делают лучшие презентации в Москве. Вместе мы работаем над некоторыми клиентскими проектами и работаем со спикерами TEDxSadovoeRing. Слайды, которые поставляет Вадим, выгодно отличают наших спикеров от всех остальных конференций — единым стилем, минимализмом, эффективностью. -->
-              <!-- .person
-                <!-- .name Глеб Шулишов -->
-                <!-- .position Режиссер презентаций,<br>тренер и коуч -->
-               -->
-              <!-- %a.watch( href="#" ) посмотреть работу -->
-             -->
-           -->
-         -->
-       -->
+      <div class='wrap'>
+        <h1>Нас рекомендуют</h1>
+        <h3>Наши клиенты о результатах презентаций</h3>
+        <ul class='fotorama' data-width='998' data-autoplay='5000' data-click='false' data-loop='true' data-transitionduration='500'>
+          <li data-client='prostopreza'>
+            <div class='info'>
+              <blockquote>Rocketslides — мои партнеры, которые делают лучшие презентации в Москве. Вместе мы работаем над некоторыми клиентскими проектами и работаем со спикерами TEDxSadovoeRing. Слайды, которые поставляет Вадим, выгодно отличают наших спикеров от всех остальных конференций — единым стилем, минимализмом, эффективностью.</blockquote>
+              <div class='person'>
+                <div class='name'>Глеб Шулишов</div>
+                <div class='position'>Режиссер презентаций,<br>тренер и коуч</div>
+              </div>
+              <a class='watch' href='#'>посмотреть работу</a>
+            </div>
+          </li>
+        </ul>
+      </div>
      -->
     <div id='services'>
       <div class='wrap'>
@@ -170,7 +172,7 @@
             <h4>от <strong>35</strong> тыс. рублей</h4>
             <a class='presentation' href='#order-presentation' data-name='продающие презентации' data-event='order-bigbutton'>Рассчитать стоимость</a>
             <!-- %p или
-              <!-- %a( href="#order-call" ta-name="из продающих презентаций" data-event="callback-header" ) заказать звонок -->
+              <a href='#order-call' ta-name='из продающих презентаций' data-event='callback-header'>заказать звонок</a>
              -->
           </li>
           <li class='public'>
@@ -186,7 +188,7 @@
             <h4>от <strong>40</strong> тыс. рублей</h4>
             <a class='presentation' href='#order-presentation' data-name='корпоративные шаблоны' data-event='order-template'>Рассчитать стоимость</a>
             <!-- %p или
-              <!-- %a( href="#order-call" data-name="из корпоративных шаблонов" data-event="callback-header" ) заказать звонок -->
+              <a href='#order-call' data-name='из корпоративных шаблонов' data-event='callback-header'>заказать звонок</a>
              -->
           </li>
           <li class='trainings'>
@@ -194,12 +196,12 @@
             <h4>от <strong>80</strong> тыс. руб./мес.</h4>
             <a class='presentation' href='#order-presentation' data-name='тренинги' data-event='order-terms'>Обсудить условия</a>
             <!-- %p или
-              <!-- %a( href="#order-call" data-name="из тренингов" data-event="callback-header") заказать звонок -->
+              <a href='#order-call' data-name='из тренингов' data-event='callback-header'>заказать звонок</a>
              -->
           </li>
         </ul>
        <!-- %h2 Хотите добавить уникальности в ваши презентации?
-        <!-- .tech Мы готовы сделать для вас впечатляющую презентацию в любом<br>прогрессивном формате! -->
+        <div class='tech'>Мы готовы сделать для вас впечатляющую презентацию в любом<br>прогрессивном формате!</div>
         -->
       </div>
     <div id='team'>
@@ -220,7 +222,7 @@
             </div>
           </div>
           <form>
-            <h3>Если остались вопросы<br></h3>
+            <h3>Если остались вопросы</h3>
             <p>Напишите нам на launch@rocketslides.ru<br>или заполните форму:</p>
             <!-- %input( type="text" name="name" placeholder="Ваше имя" required="true" ) -->
             <input type='email' name='email' placeholder='Email' required='false'>
